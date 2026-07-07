@@ -104,6 +104,17 @@ app.get('/api/v1/health', (req: Request, res: Response) => {
 });
 
 // --- Start Server ---
+import mineflayer from 'mineflayer'
+
+const bot = mineflayer.createBot({
+  host: 'mc.server.com', // thay bằng IP hoặc domain server Minecraft
+  port: 25565,           // cổng server
+  username: 'TênNick'    // tên nhân vật (offline hoặc account)
+})
+
+bot.on('spawn', () => {
+  console.log('✅ Bot đã vào server và đang đứng AFK!')
+})
 const startServer = async () => {
   try {
     // --- Database Connection ---
