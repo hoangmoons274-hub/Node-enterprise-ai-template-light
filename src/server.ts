@@ -107,9 +107,9 @@ app.get('/api/v1/health', (req: Request, res: Response) => {
 import mineflayer from 'mineflayer'
 
 const bot = mineflayer.createBot({
-  host: 'mc.server.com', // thay bằng IP hoặc domain server Minecraft
+  host: 'mc.minerua.com',
   port: 25565,
-  username: 'TênNick'
+  username: 'HoangRoseND'
 })
 
 bot.on('spawn', () => {
