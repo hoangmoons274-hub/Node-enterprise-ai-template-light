@@ -1,32 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "lib": ["ES2022", "DOM"],
-    "outDir": "./dist",
-    "rootDir": "src",
-    "strict": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "dist",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "isolatedModules": true,
-    "baseUrl": ".",
-    "typeRoots": ["./node_modules/@types", "./src/types"],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    }
+    "skipLibCheck": true
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "tests"
-  ]
+  "include": ["src", "prisma"]
 }
